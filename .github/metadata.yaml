@@ -1,0 +1,10 @@
+# .github/metadata.yaml
+description: "Memory Shared primitives — shm_open / shared-memory vocabulary (Memory.Shared + Error). Extracted from swift-memory-primitives for scope purity; syscall implementations live in swift-iso-9945."
+topics:
+  - primitives
+  - memory
+  - shared-memory
+  - ipc
+homepage: "https://swift-institute.org"
+readme:
+  family: E
