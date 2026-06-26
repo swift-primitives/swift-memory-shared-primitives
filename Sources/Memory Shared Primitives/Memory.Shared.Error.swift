@@ -28,12 +28,15 @@ extension Memory.Shared {
 // MARK: - CustomStringConvertible
 
 extension Memory.Shared.Error: CustomStringConvertible {
+    /// A human-readable description of the shared-memory failure.
     public var description: Swift.String {
         switch self {
         case .open(let code):
             return "shm_open failed: \(code)"
+
         case .unlink(let code):
             return "shm_unlink failed: \(code)"
+
         case .exhausted:
             return "out of memory"
         }
